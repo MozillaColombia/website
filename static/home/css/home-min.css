@@ -1575,10 +1575,10 @@ a{
     position: absolute;
     left: 0;
     width: 180px;
+    display: none;
 }
  .mission > .tagline{
     letter-spacing: -0.06em;
-    padding-left: 150px;
  }
 
 .foo_icon {
