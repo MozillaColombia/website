@@ -135,9 +135,13 @@ def contact():
     elif request.method == 'GET':
         return render_template('contact/index.html', form=form)
 
-@app.route('/team')
+@app.route('/equipo')
 def team():
     return render_template('team/index.html')
+
+@app.route('/eventos')
+def team():
+    return render_template('events/index.html')
 
 @app.route('/blog')
 def blog():
