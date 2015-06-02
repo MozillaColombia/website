@@ -1,0 +1,14 @@
+			<header id="masthead">
+				<a aria-label="Liens Mozilla" href="http://www.mozilla.org/fr/" id="tabzilla">Mozilla</a>
+				<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
+				<nav id="nav-main" role="navigation">
+					<ul id="nav-main-menu">
+						<li class="first mission-item"><a href="{{ url_for('home') }}">Inicio</a></li>
+						<li class="mission-item"><a href="http://blog.mozilla-tunisia.org" target="_blank">Blog</a></li>
+            			<li class="mission-item"><a href="{{ url_for('contribute') }}">Participa</a></li>
+            			<li class="mission-item"><a href="{{ url_for('resources') }}">Enlaces</a></li>
+						<li class="about-item"><a href="{{ url_for('about') }}">Acerca de</a></li>
+						<li class="last contribute-item"><a href="{{ url_for('contact') }}">Contacto</a></li>
+					</ul>
+				</nav>
+			</header>
