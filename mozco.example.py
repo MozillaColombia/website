@@ -140,7 +140,7 @@ def team():
     return render_template('team/index.html')
 
 @app.route('/eventos')
-def team():
+def events():
     return render_template('events/index.html')
 
 @app.route('/blog')
