@@ -81,7 +81,7 @@ mail.init_app(app)
 def home():
     return render_template('home/index.html')
 
-@app.route('/contribute', methods=['GET', 'POST'])
+@app.route('/participa', methods=['GET', 'POST'])
 def contribute():
     form = ContributeForm()
     if request.method == 'POST':
@@ -104,19 +104,15 @@ def contribute():
     elif request.method == 'GET':
         return render_template('contribute/index.html', form=form)
 
-@app.route('/resources')
+@app.route('/enlaces')
 def resources():
     return render_template('resources/index.html')
 
-@app.route('/join')
-def join():
-    return 'Not yet done'
-
-@app.route('/about')
+@app.route('/acerca')
 def about():
     return render_template('about/index.html')
 
-@app.route('/contact', methods=['GET', 'POST'])
+@app.route('/contacto', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
 
@@ -139,13 +135,17 @@ def contact():
     elif request.method == 'GET':
         return render_template('contact/index.html', form=form)
 
-@app.route('/IRC')
-def irc():
-    return render_template('irc/index.html')
+@app.route('/team')
+def team():
+    return render_template('team/index.html')
+
+@app.route('/blog')
+def blog():
+    return redirect('http://mozillacolombia.org/blog')
 
 @app.errorhandler(404)
 def blog_redirection(e):
-    return redirect('https://blog.mozilla-tunisia.org{0}'.format(request.path))
+    return redirect('http://mozillacolombia.org/blog{0}'.format(request.path))
 
 
 if __name__ == '__main__':
