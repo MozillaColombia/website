@@ -31,23 +31,23 @@
 </head>
 
 <body id="home" class="html-ltr sand lang-fr wide">
-	<div id="strings" data-global-close="Fermer" data-news-next="Article suivant" data-news-prev="Article précédent">
-	</div>
+  <div id="strings" data-global-close="Fermer" data-news-next="Article suivant" data-news-prev="Article précédent">
+  </div>
 
-	<div id="outer-wrapper">
-		<div id="wrapper">
+  <div id="outer-wrapper">
+    <div id="wrapper">
     {% block main_content %}
-			<main id="main-content" role="main">
-				<header class="mission">
-					<a href="{{ url_for('home') }}"><img id="logo" src="{{ url_for('static', filename='common/img/logo.png') }}"></a>
-					<h1>
-						<img class="mz" src="{{ url_for('static', filename='common/img/mozilla-wordmark-red.png') }}" data-src="//mozorg.cdn.mozilla.net/media/img/home/mozilla-wordmark-red.png" data-high-res="true" alt="Mozilla" height="70" width="258">
-						Colombia
-					</h1>
-					<p class="tagline">
-						Juntos cultivando Internet
-					</p>
-				</header>
+      <main id="main-content" role="main">
+        <header class="mission">
+          <a href="{{ url_for('home') }}"><img id="logo" src="{{ url_for('static', filename='common/img/logo.png') }}"></a>
+          <h1>
+            <img class="mz" src="{{ url_for('static', filename='common/img/mozilla-wordmark-red.png') }}" data-src="//mozorg.cdn.mozilla.net/media/img/home/mozilla-wordmark-red.png" data-high-res="true" alt="Mozilla" height="70" width="258">
+            Colombia
+          </h1>
+          <p class="tagline">
+            Juntos cultivando Internet
+          </p>
+        </header>
     <section class="extra" id="upcoming-events">
      <div class="container">
       <h1 class="title-shadow-box">{{ self.title()}}</h1>
@@ -63,8 +63,8 @@
             </span>
             
             <div class="event-detail">
-              <a rel="external" href="#">
-                <h2>Event 1</h2>
+              <a rel="external" href="https://foro.mozilla-hispano.org/c/difusion-eventos/colombia">
+                <h2>Sitio web Mozilla Hispano</h2>
               </a>
                 <p class="event-info l-ocation">TBD</p>
             </div>
@@ -73,26 +73,49 @@
         </div>
       </div>
     </section>
-			</main>
+    <section class="module" id="project-links">
+      <div class="container">
+        <h1 style="color:#484848;margin-top:20px">¿Mas información sobre nuestros eventos?</h1>
+        <p>Enterate de todos los eventos organizados por Mozilla</p>
+        <ul>
+          <li>
+            <a class="" rel="external" href="https://reps.mozilla.org" target="_blank">
+              <h2 class="mdn_icon">Mozilla Reps</h2>
+            </a>
+          </li>
+          <li>
+            <a class="" rel="external" href="https://reps.mozilla.org/people/#/search/colombia/" target="_blank">
+              <h2 class="mwiki_icon">Reps en Colombia</h2>
+            </a>
+          </li>
+          <li>
+            <a class="" rel="external" href="https://reps.mozilla.org/events/#/period/future/search/Colombia/" target="_blank">
+              <h2 class="hacks_icon">Eventos de Reps en Colombia</h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+      </main>
     {% endblock %}
-		</div>
-		<!-- close #wrapper -->
-	</div>
-	<!-- close #outer-wrapper -->
+    </div>
+    <!-- close #wrapper -->
+  </div>
+  <!-- close #outer-wrapper -->
 {% block last_load_javascript %}
-	<!--[if IE 9]>
-	      <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
-	    <![endif]-->
-	<script src="{{ url_for('static', filename='home/js/mozorg-resp-min.js') }}"></script>
-	<script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>
-	<!--[if gt IE 7]> <!-- -->
-	<script src="{{ url_for('static', filename='home/js/home-min.js') }}"></script>
-	<!-- <![endif]-->
-	<div class="crossrider-nofity-14917" index="0">	</div>
-	<div class="crossrider-nofity-14917-top-left">	</div>
-	<div class="crossrider-nofity-14917-top-right">	</div>
-	<div class="crossrider-nofity-14917-bottom-left"> </div>
-	<div class="crossrider-nofity-14917-bottom-right"></div>
+  <!--[if IE 9]>
+        <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
+      <![endif]-->
+  <script src="{{ url_for('static', filename='home/js/mozorg-resp-min.js') }}"></script>
+  <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>
+  <!--[if gt IE 7]> <!-- -->
+  <script src="{{ url_for('static', filename='home/js/home-min.js') }}"></script>
+  <!-- <![endif]-->
+  <div class="crossrider-nofity-14917" index="0"> </div>
+  <div class="crossrider-nofity-14917-top-left">  </div>
+  <div class="crossrider-nofity-14917-top-right"> </div>
+  <div class="crossrider-nofity-14917-bottom-left"> </div>
+  <div class="crossrider-nofity-14917-bottom-right"></div>
 {% endblock %}
 </body>
 
