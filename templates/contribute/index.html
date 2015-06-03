@@ -83,7 +83,7 @@
 				<header class="page-head">
 				  	<div class="container">
 				    	<h1 class="page-title">Cuéntanos en que te gustaría ayudar</h1>
-				    	<p class="section-tagline">Faites vous plaisir et contribuez à votre rythme dans l'un de nos projets. Visitez la liste des domaines de contribution et faites vous votre idée</p>
+				    	<p class="section-tagline">En Mozilla Hispano y Mozilla Colombia creemos que lo que nos da valor y nos diferencia del resto es que somos una comunidad de voluntarios que hablamos tu mismo idioma. Nuestra misión es que la web sea un recurso libre y accesible por todo el mundo.</p>
 				  	</div>
 				</header>
 				<section class="section inquiry">
@@ -94,74 +94,74 @@
                       				<li class="option">
               							<label class="category-coding">
 							                <input type="radio" value="coding" required="required" name="category">
-							                <span class="label-text">Codage</span>
-							                <a href="#info-coding" class="info">Plus d'informations</a>
+							                <span class="label-text">Programación</span>
+							                <a href="#info-coding" class="info">Más información</a>
               							</label>
             						</li>
                       				<li class="option">
               							<label class="category-testing">
 							                <input type="radio" value="testing" required="required" name="category">
-							                <span class="label-text">Tests</span>
-							                <a href="#info-testing" class="info">Plus d'informations</a>
+							                <span class="label-text">Pruebas</span>
+							                <a href="#info-testing" class="info">Más información</a>
               							</label>
             						</li>
                       				<li class="option">
               							<label class="category-writing">
 							                <input type="radio" value="writing" required="required" name="category">
-							                <span class="label-text">Ecriture</span>
-							                <a href="#info-writing" class="info">Plus d'informations</a>
+							                <span class="label-text">Redacción</span>
+							                <a href="#info-writing" class="info">Más información</a>
               							</label>
             						</li>
                       				<li class="option">
               							<label class="category-teaching">
                 							<input type="radio" value="teaching" required="required" name="category">
-							                <span class="label-text">Enseignement</span>
-							                <a href="#info-teaching" class="info">Plus d'informations</a>
+							                <span class="label-text">Comunicación</span>
+							                <a href="#info-teaching" class="info">Más información</a>
               							</label>
             						</li>
                       				<li class="option">
               							<label class="category-translating">
 							                <input type="radio" value="translating" required="required" name="category">
-							                <span class="label-text">Traduction</span>
-							                <a href="#info-translating" class="info">Plus d'informations</a>
+							                <span class="label-text">Traducción</span>
+							                <a href="#info-translating" class="info">Más información</a>
               							</label>
             						</li>
             						<li class="option">
               							<label class="category-activism">
 							                <input type="radio" value="activism" required="required" name="category">
-							                <span class="label-text">Activisme</span>
-							                <a href="#info-activism" class="info">Plus d'informations</a>
+							                <span class="label-text">Activismo</span>
+							                <a href="#info-activism" class="info">Más información</a>
               							</label>
             						</li>
             						<li class="option">
 	              						<label class="category-helping">
 							                <input type="radio" value="helping" required="required" name="category">
-							                <span class="label-text">Aide</span>
-							                <a href="#info-helping" class="info">Plus d'informations</a>
+							                <span class="label-text">Ayuda</span>
+							                <a href="#info-helping" class="info">Más información</a>
 	              						</label>
             						</li>
                   				</ul>
       						</fieldset>
       						<fieldset class="personal">
 								{{ form.hidden_tag() }}
-								<h2 class="section-title">Dites-Nous ce qui vous intéresse</h2>
+								<h2 class="section-title">Cuéntanos en que área te gustaría empezar</h2>
 								<ul>
 									<li>								
-										<label for="person-name">Nom & Prénom</label>
+										<label for="person-name">Nombres y apellidos</label>
 										<input id="id_name" type="text" name="name"/>
 										{% for message in form.name.errors %}
 										  	<div class="flash">{{ message }}</div>
 										{% endfor %}
 									</li>
 									<li>
-										<label for="person-email">Adresse Mail</label>
+										<label for="person-email">Correo electronico</label>
 										<input id="id_email" type="email" name="email"/>
 										{% for message in form.email.errors %}
 										  	<div class="flash">{{ message }}</div>
 										{% endfor %}
 									</li>
 									<li class="form-message">								
-										<label for="person-message">Pourquoi voulez-vous faire partie de Mozilla-Tunisia?</label>
+										<label for="person-message">¿Por qué quieres formar parte de Mozilla Colombia?</label>
 										<textarea id="person-message" cols="30" rows="4" name="message"></textarea>
 										{% for message in form.message.errors %}
 										  <div class="flash">{{ message }}</div>
