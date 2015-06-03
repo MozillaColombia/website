@@ -19,15 +19,13 @@ class ContactForm(Form):
       [validators.Required("Este campo es obligatorio.")])
   last_name = TextField("Apellido",
       [validators.Required(u"Este campo es obligatorio.")])
-
-
   email = TextField("Email",
       [validators.Required("Este campo es obligatorio."),
-      validators.Email("Debe ingresar una dirección de correo válida")])
+      validators.Email("Tienes que ingresar una dirección de correo válida")])
   subject = TextField("Asunto",
       [validators.Required("Este campo es obligatorio")])
   message = TextAreaField("Mensaje", 
-      [validators.Required("Veuillez entrer votre message.")])
+      [validators.Required("Tienes que ingresar un mensaje.")])
   submit = SubmitField("Enviar")
 
   recaptcha = RecaptchaField()
@@ -36,20 +34,20 @@ class ContactForm(Form):
 
 class ContributeForm(Form):
 
-  category = RadioField("Category",
+  category = RadioField("Categoría",
       [validators.Required()],
       choices=[('coding', 'coding'), ('testing','testing'), 
       ('writing','writing'), ('teaching','teaching'),
       ('translating', 'translating'), ('activism', 'activism'),
       ('helping', 'helping')])
   name = TextField("name",
-      [validators.Required(u"Le Nom et Prénom est obligatoire.")])
+      [validators.Required(u"Este campo es obligatorio.")])
   email = TextField("Email",
-      [validators.Required("L'adresse email est obligatoire."),
-      validators.Email("Il faut entrer une adresse email correcte")])
+      [validators.Required("Este campo es obligatorio."),
+      validators.Email("Tienes que ingresar una dirección de correo válida")])
   message = TextAreaField("Message", 
-      [validators.Required("Veuillez entrer votre message.")])
-  submit = SubmitField("Envoyer")
+      [validators.Required("Tienes que ingresar un mensaje.")])
+  submit = SubmitField("Enviar")
 
   recaptcha = RecaptchaField()
 
