@@ -15,20 +15,20 @@ from flask.ext.mail import Message, Mail
 
 class ContactForm(Form):
 
-  first_name = TextField("Nom",
-      [validators.Required("Le nom est obligatoire.")])
-  last_name = TextField("Prenom",
-      [validators.Required(u"Le Prénom est obligatoire.")])
+  first_name = TextField("Nombre",
+      [validators.Required("Este campo es obligatorio.")])
+  last_name = TextField("Apellido",
+      [validators.Required(u"Este campo es obligatorio.")])
 
 
   email = TextField("Email",
-      [validators.Required("L'adresse email est obligatoire."),
-      validators.Email("Il faut entrer une adresse email correcte")])
-  subject = TextField("Sujet",
-      [validators.Required("Le sujet est obligatoire.")])
-  message = TextAreaField("Message", 
+      [validators.Required("Este campo es obligatorio."),
+      validators.Email("Debe ingresar una dirección de correo válida")])
+  subject = TextField("Asunto",
+      [validators.Required("Este campo es obligatorio")])
+  message = TextAreaField("Mensaje", 
       [validators.Required("Veuillez entrer votre message.")])
-  submit = SubmitField("Envoyer")
+  submit = SubmitField("Enviar")
 
   recaptcha = RecaptchaField()
 
@@ -64,12 +64,12 @@ app.config['MAIL_PORT'] = 465
 app.config['MAIL_USE_SSL'] = True
 
 #These fields needs to be filled in production
-app.config['MAIL_USERNAME'] = ''
+app.config['MAIL_USERNAME'] = 'contacto@mozillacolombia.org'
 app.config['MAIL_PASSWORD'] = ''
-app.config['MAIL_RECIPIENTS'] = ['']
+app.config['MAIL_RECIPIENTS'] = ['gioyik@mozillacolombia.org']
 
 app.config['RECAPTCHA_PRIVATE_KEY'] = ''
-app.config['RECAPTCHA_PUBLIC_KEY'] = ''
+app.config['RECAPTCHA_PUBLIC_KEY'] = '6LckyAcTAAAAANSkOgWHfenFU2KHUnE_g_acdA-o'
 
 
 mail.init_app(app)
