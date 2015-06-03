@@ -39,7 +39,7 @@ class ContributeForm(Form):
       choices=[('coding', 'coding'), ('testing','testing'), 
       ('writing','writing'), ('teaching','teaching'),
       ('translating', 'translating'), ('activism', 'activism'),
-      ('helping', 'helping')])
+      ('helping', 'helping'), ('education', 'education')])
   name = TextField("name",
       [validators.Required(u"Este campo es obligatorio.")])
   email = TextField("Email",
@@ -87,13 +87,13 @@ def contribute():
         flash("Error")
         return render_template('contribute/index.html', form=form)
       else:
-        msg = Message('[' + form.category.data + '] We have a new Contributor !',
+        msg = Message('[' + form.category.data + '] tenemos un voluntario nuevo!',
             sender=app.config['MAIL_USERNAME'],
             recipients=app.config['MAIL_RECIPIENTS'])
         msg.body = """
-          From: {0} <{1}>
+          De: {0} <{1}>
           Un nouveau contributeur vient de s'inscrire, dans la catégorie : **{2}**
-          Message : 
+          Mensaje : 
           {3}
         """.format(form.name.data, form.email.data, form.category.data, form.message.data)
         mail.send(msg)
