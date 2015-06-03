@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 
-{% block title %}Contactez-nous{% endblock %}
+{% block title %}Contactanos{% endblock %}
 
 {% block style %}
 
@@ -45,10 +45,10 @@
 					<a href="{{ url_for('home') }}"><img id="logo" src="{{ url_for('static', filename='common/img/logo.png') }}"></a>
 					<h1>
 						<img class="mz" src="{{ url_for('static', filename='common/img/mozilla-wordmark-red.png') }}" data-src="//mozorg.cdn.mozilla.net/media/img/home/mozilla-wordmark-red.png" data-high-res="true" alt="Mozilla" height="70" width="258">
-						Tunisia
+						Contacto
 					</h1>
 					<p class="tagline">
-						Un Web plus juste, c'est dans nos co{r}des
+						Juntos cultivando Internet
 					</p>
 					<p class="engage">
 						<a href="http://www.mozilla.org/fr/contribute/" class="button go">Contribuer</a>
@@ -71,28 +71,28 @@
 								<fieldset class="personal">
         							<ul>
 										<li>
-											<label for="person-name">Nom</label>
+											<label for="person-name">Nombres</label>
 											<input type="text"  name="last_name" id="last_name">
 											{% for message in form.first_name.errors %}
 											  <div class="flash">{{ message }}</div>
 											{% endfor %}
 										</li>
 										<li>
-											<label for="person-name">Prénom</label>
+											<label for="person-name">Apellidos</label>
 											<input type="text"  name="first_name" id="first_name">
 											{% for message in form.last_name.errors %}
 											  <div class="flash">{{ message }}</div>
 											{% endfor %}
 										</li>
 										<li>
-											<label for="person-email">Sujet</label>
+											<label for="person-email">Asunto</label>
 											<input type="text" name="subject" id="subject">
 											{% for message in form.subject.errors %}
 											  <div class="flash">{{ message }}</div>
 											{% endfor %}
 										</li>
 										<li>
-											<label for="person-email">Email</label>
+											<label for="person-email">Tu email</label>
 											<input type="email" name="email" id="email">
 											{% for message in form.email.errors %}
 											  <div class="flash">{{ message }}</div>
@@ -100,7 +100,7 @@
 										</li>
           
 										<li class="form-message">
-											<label for="person-message">Message</label>
+											<label for="person-message">Mensaje</label>
 										<textarea name="message" rows="4" cols="60" id="person-message"></textarea>
 										{% for message in form.message.errors %}
 										  <div class="flash">{{ message }}</div>
@@ -111,17 +111,17 @@
         							</ul>
         							{{ form.recaptcha }}
                       {% if form.recaptcha.errors|length > 0 %}
-							  <div class="flash">Il faut vérifier que vous n'êtes pas un robot !</div>
+							  <div class="flash">Vamos a comprobar que no eres un robot!</div>
 							{% endif %}
       							</fieldset>
 
 								<fieldset class="submit">
-        							<button type="submit" class="button" name="submit">Envoyer</button>
+        							<button type="submit" class="button" name="submit">Enviar</button>
       							</fieldset>
 							</form>
 						</div>
 						<div class="video video-right social">							
-							<h4>Rester en <strong>contact</strong></h4>
+							<h4><strong>Contactanos</strong> igualmente por:</h4>
 							<ul class="social-icons">
 							<li class="facebook"><a href="https://www.facebook.com/MozillaTunisia" target="_blank" title="Facebook">Facebook</a></li>
 							<li class="twitter"><a href="https://twitter.com/MozillaTunisia" target="_blank" title="Twitter">Twitter</a></li>
