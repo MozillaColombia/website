@@ -72,7 +72,7 @@ Then, add a `VirtualHost` entry on apache config file
         Allow from all
       </Directory>
       Alias /static /var/www/website/static
-      <Directory /var/www/wwebsite/static/>
+      <Directory /var/www/website/static/>
         Order allow,deny
         Allow from all
       </Directory>
