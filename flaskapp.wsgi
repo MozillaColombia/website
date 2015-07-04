@@ -4,4 +4,4 @@ import logging
 logging.basicConfig(stream=sys.stderr)
 sys.path.insert(0, "/var/www/website/")
 
-from mozco import app as application # moztn is mozco.py
+from mozco import app as application # mozco is mozco.py
