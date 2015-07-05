@@ -12,11 +12,11 @@ $( document ).ready(function() {
     var html = "<div class='event'> \
                   <div class='featured-event'>\
                     <span class='res_icon'>\
-                      <a rel='external' class='date-large'> \
+                      <span' class='date-large'> \
                           <span class='calendar-month'></span> <br> \
                           <span class='calendar-day'></span> <br> \
                           <span class='calendar-year'></span> \
-                      </a> \
+                      </span> \
                     </span> \
                   <div class='event-detail'> \
                     <a rel='external'> \
