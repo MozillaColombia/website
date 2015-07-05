@@ -67,7 +67,7 @@ app.config['MAIL_PASSWORD'] = ''
 app.config['MAIL_RECIPIENTS'] = ['gioyik@mozillacolombia.org']
 
 app.config['RECAPTCHA_PRIVATE_KEY'] = ''
-app.config['RECAPTCHA_PUBLIC_KEY'] = '6LckyAcTAAAAANSkOgWHfenFU2KHUnE_g_acdA-o'
+app.config['RECAPTCHA_PUBLIC_KEY'] = '6LefTgkTAAAAAMPxcG6Swk3JYMboSp2fgZ8vWeWM'
 
 
 mail.init_app(app)
@@ -87,12 +87,12 @@ def contribute():
         flash("Error")
         return render_template('contribute/index.html', form=form)
       else:
-        msg = Message('[' + form.category.data + '] tenemos un voluntario nuevo!',
+        msg = Message('[' + form.category.data + '] Tenemos un voluntario nuevo!',
             sender=app.config['MAIL_USERNAME'],
             recipients=app.config['MAIL_RECIPIENTS'])
         msg.body = """
           De: {0} <{1}>
-          Un nouveau contributeur vient de s'inscrire, dans la catégorie : **{2}**
+          Un nuevo voluntario se ha inscrito en la siguiente categoria: **{2}**
           Mensaje : 
           {3}
         """.format(form.name.data, form.email.data, form.category.data, form.message.data)
