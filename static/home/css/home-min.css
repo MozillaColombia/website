@@ -345,6 +345,9 @@ a{
   font-size: 1.4em;
     color: #333;
 }
+.loader img {
+  margin: 0 auto;
+}
 .newsletter-form {
     float: left;
     width: auto;
