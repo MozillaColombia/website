@@ -55,19 +55,8 @@
       <div class="container">
         <div class="inner-container">
 
-          <div class="featured-event">
-            <span class="res_icon">
-              <a rel="external" href="http://wiki.mozilla-tunisia.org" class="date-large">
-                <img class="mz" src="{{ url_for('static', filename='resources/img/icon_wiki_moztn.png') }}"  alt="Wiki Mozilla Tunisia">
-              </a>
-            </span>
-            
-            <div class="event-detail">
-              <a rel="external" href="https://foro.mozilla-hispano.org/c/difusion-eventos/colombia">
-                <h2>Sitio web Mozilla Hispano</h2>
-              </a>
-                <p class="event-info l-ocation">TBD</p>
-            </div>
+          <div class="loader" style="text-align: center">
+            <img src="{{ url_for('static', filename='events/img/loader.gif') }}">
           </div>
 
         </div>
@@ -115,6 +104,7 @@
   <script src="//mozorg.cdn.mozilla.net/en-US/tabzilla/tabzilla.js"></script>
   <!--[if gt IE 7]> <!-- -->
   <script src="{{ url_for('static', filename='home/js/home-min.js') }}"></script>
+  <script src="{{ url_for('static', filename='events/js/reps.js') }}"></script>
   <!-- <![endif]-->
   <div class="crossrider-nofity-14917" index="0"> </div>
   <div class="crossrider-nofity-14917-top-left">  </div>
