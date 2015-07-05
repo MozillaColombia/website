@@ -41,7 +41,7 @@ $( document ).ready(function() {
             var dateSplit = dateRegexp.exec(item.local_start);
             var convert = String(dateSplit);
             var finalDate = convert.split("-");
-            $('body').append(html);
+            $('.container .inner-container').append(html);
             $('div.event').attr('class', i);
             $('.'+i+' .date-large').attr('href', item.event_url);
             $('.'+i+' .event-detail a').attr('href', item.event_url);
