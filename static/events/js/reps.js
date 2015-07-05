@@ -43,7 +43,6 @@ $( document ).ready(function() {
             var finalDate = convert.split("-");
             $('.container .inner-container').append(html);
             $('div.event').attr('class', i);
-            $('.'+i+' .date-large').attr('href', item.event_url);
             $('.'+i+' .event-detail a').attr('href', item.event_url);
             $('.'+i+' .res_icon .calendar-month').text(getMonth(finalDate[1]/1));
             $('.'+i+' .res_icon .calendar-day').text(finalDate[2]);

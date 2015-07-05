@@ -321,6 +321,30 @@ a{
     color: #494C4D;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
+.event-detail h2 {
+    color: #0096DD;
+}
+.res_icon {
+    font: 10px/1 "Open Sans Light","Lucida Sans","Lucida Grande","Lucida Sans Unicode",Verdana,sans-serif;
+    color: #333;
+}
+.calendar-month {
+  display: block;
+  font-size: 1.4em;
+  text-transform: uppercase;
+    color: #333;
+}
+.calendar-day {
+  display: block;
+  font-size: 2.6em;
+  line-height: 0.95;
+    color: #333;
+}
+.calendar-year {
+  display: block;
+  font-size: 1.4em;
+    color: #333;
+}
 .newsletter-form {
     float: left;
     width: auto;
