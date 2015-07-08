@@ -64,7 +64,7 @@ app.config['MAIL_USE_SSL'] = True
 #These fields needs to be filled in production
 app.config['MAIL_USERNAME'] = 'contacto@mozillacolombia.org'
 app.config['MAIL_PASSWORD'] = ''
-app.config['MAIL_RECIPIENTS'] = ['gioyik@mozillacolombia.org']
+app.config['MAIL_RECIPIENTS'] = ['gioyik@mozillacolombia.org, Jeferduran@mozilla-hispano.org']
 
 app.config['RECAPTCHA_PRIVATE_KEY'] = ''
 app.config['RECAPTCHA_PUBLIC_KEY'] = '6LefTgkTAAAAAMPxcG6Swk3JYMboSp2fgZ8vWeWM'
