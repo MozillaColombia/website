@@ -856,8 +856,7 @@ a{
 }
 /*add panel-kernel style*/
 #panel-kernel {
-  background: #D4DDE4 url("../img/bg-kernel-mosaic.png") -50px -80px no-repeat;
-  background: url("../img/bg-kernel-mosaic.png") -50px -80px no-repeat, #D4DDE4 repeat;
+  background: #D4DDE4;
 }
 #panel-kernel .panel-title i {
   display: block;
@@ -872,8 +871,7 @@ a{
 }
 /*add panel-blog style*/
 #panel-blog {
-  background: #404c58 url("../img/bg-logo-moztn-hires.png") -50px -80px no-repeat;
-  background: url("../img/bg-logo-moztn-hires.png") -50px -80px no-repeat, #404c58 repeat;
+  background: #404c58;
 }
 #panel-blog .panel-title i {
   display: block;
@@ -1190,7 +1188,6 @@ a{
 }
 /*blog*/
 #panel-blog {
-    background-image: url("../img/bg-logo-moztn-md.png");
     background-position: -45px -70px;
 }
 #panel-blog.expanded {
@@ -1201,7 +1198,6 @@ a{
 }
 /*community*/
 #panel-kernel {
-    background-image: url("../img/bg-kernel-mosaic-md.png");
     background-position: -45px 10px;
 }
 #panel-kernel.expanded {
@@ -1317,7 +1313,6 @@ a{
 
 /*kernel*/
 #panel-kernel {
-    background-image: url("../img/bg-kernel-mosaic-sm.png");
     background-position: -121px -75px;
 }
 #panel-kernel.expanded {
@@ -1329,7 +1324,6 @@ a{
 
 /*blog*/
 #panel-blog {
-    background-image: url("../img/bg-logo-moztn-sm.png");
     background-position: -21px -76px;
 }
 #panel-blog.expanded {

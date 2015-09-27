@@ -39,7 +39,7 @@ class ContributeForm(Form):
       choices=[('coding', 'coding'), ('testing','testing'), 
       ('writing','writing'), ('teaching','teaching'),
       ('translating', 'translating'), ('activism', 'activism'),
-      ('helping', 'helping'), ('education', 'education')])
+      ('helping', 'helping')])
   name = TextField("name",
       [validators.Required(u"Este campo es obligatorio.")])
   email = TextField("Email",
