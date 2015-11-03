@@ -1,17 +1,39 @@
-{% extends "layout.html" %}
+<!DOCTYPE html>
+<html class="linux js loaded" dir="ltr" lang="es"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mozilla Colombia</title>
+    <meta name="description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mozilla Colombia">
+    <meta property="og:locale" content="es">
+    <meta property="og:url" content="http://www.mozillacolombia.org">
+    <meta property="og:image" content="https://mozorg.cdn.mozilla.net/media/img/mozorg/mozilla-256.jpg">
+    <meta property="og:title" content="Sitio web de la comunidad Mozilla Colombia">
+    <meta property="og:description" content="">
+    <meta property="fb:page_id" content="295110934094">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@mozillacolombia">
+    <meta name="twitter:domain" content="mozillacolombia.org">
+    <!-- <meta name="twitter:app:name:googleplay" content="Firefox">
+    <meta name="twitter:app:id:googleplay" content="org.mozilla.firefox"> -->
+    <link rel="shortcut icon" href="http://mozorg.cdn.mozilla.net/media/img/favicon.ico">
+    <link rel="canonical" hreflang="fr" href="http://www.mozillacolombia.org">
+    <link rel="alternate" hreflang="x-default" href="http://www.mozillacolombia.org/">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
-{% block title %}Mozilla Colombia{% endblock %}
 
-{% block style %}
+    
 
 
     <!--[if lte IE 8]>
     <script src="//mozorg.cdn.mozilla.net/media/js/libs/html5shiv.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" media="screen,projection,tv" href="{{ url_for('static', filename='home/css/responsive-min.css') }}">
-    <link rel="stylesheet" media="screen,projection,tv" href="{{ url_for('static', filename='home/css/home2.css') }}">
-    <link rel="stylesheet" media="screen,projection,tv" href="{{ url_for('static', filename='home/css/home-min.css') }}">
+    <link rel="stylesheet" media="screen,projection,tv" href="static/home/css/responsive-min.css">
+    <link rel="stylesheet" media="screen,projection,tv" href="static/home/css/home2.css">
+    <link rel="stylesheet" media="screen,projection,tv" href="static/home/css/home-min.css">
 
 <!--[if IE 9]>
   <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-ie9-min.css?build=c6d3fcc" />
@@ -23,26 +45,43 @@
   <link rel="stylesheet" media="screen,projection,tv" href="//mozorg.cdn.mozilla.net/media/css/home-ie-min.css?build=c6d3fcc" />
 <![endif]-->
 
-{% endblock %}
 
-{% block javascript %}
-    <script id="undefined" src="{{ url_for('static', filename='home/js/inpage_linkid.js') }}" async="" type="text/javascript"></script>
-    <script src="{{ url_for('static', filename='home/js/site-min.js') }}"></script>
-    {% endblock %}
+
+    
+    <script id="undefined" src="static/home/js/inpage_linkid.js" async="" type="text/javascript"></script>
+    <script src="static/home/js/site-min.js"></script>
+    
+
 </head>
 
 <body id="home" class="html-ltr sand lang-fr wide">
-	<div id="strings" data-global-close="Fermer" data-news-next="Article suivant" data-news-prev="Article précédent">
+  <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
+<script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
 	</div>
-
 	<div id="outer-wrapper">
 		<div id="wrapper">
-    {% block main_content %}
+    			<header id="masthead">
+				<a aria-label="Liens Mozilla" href="http://www.mozilla.org/fr/" id="tabzilla">Mozilla</a>
+				<span class="toggle" role="button" aria-controls="nav-main-menu" tabindex="0">Menu</span>
+				<nav id="nav-main" role="navigation">
+					<ul id="nav-main-menu">
+						<li class="first mission-item"><a href="/">Inicio</a></li>
+						<li class="mission-item"><a href="/blog">Blog</a></li>
+            			<!--<li class="mission-item"><a href="/participa">Participa</a></li>-->
+            			<li class="mission-item"><a href="/eventos">Eventos</a></li>
+                  		<!--<li class="mission-item"><a href="/enlaces">Enlaces</a></li>-->
+						<li class="about-item"><a href="/acerca">Acerca de</a></li>
+                        <li class="about-item"><a href="/equipo">Equipo</a></li>
+						<!--<li class="last contribute-item"><a href="/contacto">Contacto</a></li>-->
+					</ul>
+				</nav>
+			</header>
+    
 			<main id="main-content" role="main">
 				<header class="mission">
-					<a href="{{ url_for('home') }}"><img id="logo" src="{{ url_for('static', filename='common/img/logo.png') }}"></a>
+					<a href="/"><img id="logo" src="static/common/img/logo.png"></a>
 					<h1>
-						<img class="mz" src="{{ url_for('static', filename='common/img/mozilla-wordmark-red.png') }}" data-src="//mozorg.cdn.mozilla.net/media/img/home/mozilla-wordmark-red.png" data-high-res="true" alt="Mozilla" height="70" width="258">
+						<img class="mz" src="static/common/img/mozilla-wordmark-red.png" data-src="//mozorg.cdn.mozilla.net/media/img/home/mozilla-wordmark-red.png" data-high-res="true" alt="Mozilla" height="70" width="258">
 						Colombia
 					</h1>
 					<p class="tagline">
@@ -87,7 +126,7 @@
 						<h2 class="panel-title"><i>Participa</i> Mozilla Colombia</h2>
 						<div class="panel-inner">
 							<div class="panel-content">
-								<a href="{{ url_for('contribute') }}" hreflang="en-US">
+								<a href="/participa" hreflang="en-US">
 								<div class="angle">
 									<div class="content" style="color:#494949;">
 										<h3>Participa en nuestra comunidad</h3>
@@ -125,7 +164,7 @@
 				<div class="container">
 					<a href="http://www.mozilla.org/fr/firefox/" id="firefox-promo-link">
 					<h3>
-					<img class="" src="{{ url_for('static', filename='home/img/firefox-sm.png') }}" data-high-res="true" alt="" height="100" width="280">
+					<img class="" src="static/home/img/firefox-sm.png" data-high-res="true" alt="" height="100" width="280">
 
 						</h3>
       <h4>Comprometidos contigo, tu privacidad y la web abierta</h4>
@@ -156,7 +195,7 @@
 					<div id="footer-email-form">
 						<h3>¿Quieres saber cuales son nuestros proxímos eventos?</h3>
 						<div>
-              <a href="{{ url_for('events') }}">
+              <a href="/eventos">
                 <button class="button">Enterate aquí »</button>
               </a>
 						</div>
@@ -166,18 +205,51 @@
 				</div>
 				</section>
 			</main>
-    {% endblock %}
+    
+
 		</div>
 		<!-- close #wrapper -->
+     		<footer id="colophon" class="">
+		<div class="row">
+			<div class="col col-1">
+				<a href="http://www.mozillacolombia.org/"><img id="logo-footer" src="static/common/img/footer-mozilla.png" alt="mozilla"></a>
+			</div>
+		<div class="col col-2">
+		   	<p>
+		   		Este sitio fué creado y es mantenido por la comunidad Mozilla Colombia perteneciente a la fundación <a href="https://www.mozilla.org/es/" target="_blank">Mozilla</a>. Este sitio está bajo la licencia Creative Commons y su contenido está disponible en <a href="https://www.github.com/MozillaColombia/website" target="_blank">Github</a>.
+		   	</p>
+		</div>
+
+		<div class="col col-3">
+			<span class="foo_icon">
+				<a href="https://www.github.com/MozillaColombia" target="_blank">
+					<i class="fa fa-github-square fa-3x"></i>
+				</a>
+			</span>
+			<span class="foo_icon">
+				<a href="https://www.facebook.com/mozillacolombia" target="_blank">
+					<i class="fa fa-facebook-official fa-3x"></i>
+				</a>
+			</span>
+	     	<span class="foo_icon">
+	     		<a href="https://twitter.com/mozillacolombia" target="_blank">
+	     			<i class="fa fa-twitter-square fa-3x"></i>
+	     		</a>
+	     	</span>
+
+		</div>
+	
+		</div>
+		</footer>
 	</div>
 	<!-- close #outer-wrapper -->
-{% block last_load_javascript %}
+
 	<!--[if IE 9]>
 	      <script src="//mozorg.cdn.mozilla.net/media/js/libs/matchMedia.js"></script>
 	    <![endif]-->
-	<script src="{{ url_for('static', filename='home/js/mozorg-resp-min.js') }}"></script>
+	<script src="static/home/js/mozorg-resp-min.js"></script>
 	<!--[if gt IE 7]> <!-- -->
-	<script src="{{ url_for('static', filename='home/js/home-min.js') }}"></script>
+	<script src="static/home/js/home-min.js"></script>
 	<!-- <![endif]-->
 	<div class="crossrider-nofity-14917" index="0">	</div>
 	<div class="crossrider-nofity-14917-top-left">	</div>
@@ -194,7 +266,7 @@
     ga('send', 'pageview');
 
   </script>
-{% endblock %}
+
 </body>
 
 </html>

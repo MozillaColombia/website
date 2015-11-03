@@ -1,3 +1,0 @@
-Flask
-flask-wtf
-flask-mail
